@@ -12,6 +12,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define :centos01 do |box1|
     # Every Vagrant virtual environment requires a box to build off of.
     box1.vm.box = "centos01"
+    box1.vm.hostname = "centos-vm01"
     box1.vm.provision :shell, :path => "provision.sh"
     box1.vm.network :private_network, ip: "10.0.0.11"
     box1.vm.box_url = "file://W:/Installed/Vagrant_boxes/opscode_centos-6.5_chef-provisionerless.box"
@@ -19,6 +20,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define :centos02 do |box2|
     # Every Vagrant virtual environment requires a box to build off of.
     box2.vm.box = "centos02"
+    box2.vm.hostname = "centos-vm02"
     box2.vm.provision :shell, :path => "provision.sh"
     box2.vm.network :private_network, ip: "10.0.0.12"
     box2.vm.box_url = "file://W:/Installed/Vagrant_boxes/opscode_centos-6.5_chef-provisionerless.box"
