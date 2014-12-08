@@ -22,6 +22,9 @@ echo "${MOTD_TEXT}" > /etc/motd
 
 #--
 
+# Install Vim
+yum -y install vim-enhanced
+
 # Install some Python addons (not sure if this is required)
 yum -y install python-py.noarch
 
