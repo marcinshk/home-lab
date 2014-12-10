@@ -4,7 +4,7 @@
 #
 # Tools:
 #-------------------
-yum -y install vim-enhanced elinks
+yum -y install vim-enhanced elinks lsof
 
 # Python dev stack:
 #-------------------
